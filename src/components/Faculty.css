@@ -1,0 +1,97 @@
+/* Faculty.css */
+/* Styles for the Meet Our Instructors section */
+
+/* Section wrapper */
+.faculty {
+  padding: 80px 160px;
+  background-color: #FAF9F6;
+}
+
+/* 3 column grid for faculty cards */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Individual faculty card */
+.faculty-card {
+  background-color: #F3F4F6;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.faculty-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Green accent bar at top of card */
+.card-accent {
+  height: 6px;
+  background-color: #16A34A;
+}
+
+/* Card content padding */
+.faculty-content {
+  padding: 24px;
+  text-align: center;
+}
+
+/* Circular image wrapper */
+.faculty-img-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden;
+  margin: 0 auto 16px; /* Centers the image horizontally */
+  border: 3px solid #16A34A; /* Green border around photo */
+}
+
+/* Profile photo */
+.faculty-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the circle without distortion */
+}
+
+/* Teacher name */
+.faculty-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+/* Subject in green */
+.faculty-subject {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #16A34A;
+  margin-bottom: 10px;
+}
+
+/* Short bio */
+.faculty-bio {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .faculty {
+    padding: 40px 20px;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+}

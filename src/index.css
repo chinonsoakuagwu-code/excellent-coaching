@@ -1,0 +1,11 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF9F6; /* Off-white - applied to every page */
+  font-family: 'Inter', sans-serif; /* Default font for the whole site */
+}
+
+* {
+  box-sizing: border-box;
+}

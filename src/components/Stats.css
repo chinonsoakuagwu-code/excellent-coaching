@@ -1,0 +1,91 @@
+/* Stats.css */
+/* Styles for the Stats banner section */
+
+/* Section wrapper - no top padding since WhyChooseUs already has bottom padding */
+.stats {
+  padding: 0 160px 80px 160px;
+}
+
+/* Platinum rounded card that wraps all stats */
+.stats-card {
+  background-color: #F3F4F6;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+/* Main heading above the stats */
+.stats-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #16A34A;
+  margin-bottom: 24px;
+}
+
+/* Flex container for the 3 stats side by side */
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Individual stat item */
+.stat-item {
+  text-align: center;
+}
+
+/* The big number */
+.stat-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #16A34A;
+  margin-bottom: 8px;
+}
+
+/* Label below the number */
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #374151;
+}
+
+/* Vertical divider line between stats */
+.stat-divider {
+  width: 1px;
+  height: 70px;
+  background-color: #D97706;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .stats {
+    padding: 0 20px 60px 20px;
+  }
+
+  .stats-card {
+    padding: 24px;
+  }
+
+  .stats-heading {
+    font-size: 24px;
+  }
+
+  .stats-grid {
+    flex-direction: column; /* Stack stats vertically on mobile */
+    gap: 24px;
+  }
+
+  /* Hide dividers on mobile since stats are stacked */
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+}

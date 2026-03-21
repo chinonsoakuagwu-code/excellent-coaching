@@ -1,0 +1,80 @@
+.whyus{
+    padding: 80px 160px;
+    background-color: hsl(45, 29%, 97%);
+}
+
+.why-grid{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 24px;
+}
+
+/* Subtitle below section heading */
+.section-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #374151;
+  margin-top: 12px;
+}
+
+.why-card {
+  background-color: #FFFFFF;    
+  border-top: 4px solid #16A34A; /* green line at top */
+  border-bottom: 4px solid #16A34A; /* green line at bottom */
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card content padding */
+.whyus-content {
+  padding: 24px;
+  text-align: center; /* centers everything inside the card */
+}
+
+/* Icon size */
+.card-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+/* Feature title */
+.card-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* Feature description */
+.card-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* WhyChooseUs mobile styles */
+@media (max-width: 768px) {
+  .whyus {
+    padding: 40px 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on mobile */
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+  }
+}
