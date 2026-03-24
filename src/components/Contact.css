@@ -1,0 +1,199 @@
+/* ── Variables ─────────────────────────────────────── */
+:root {
+  --primary: #16a34a;
+  --accent: #d97706;
+  --bg: #faf9f6;
+  --card: #f3f4f6;
+  --text: #111827;
+  --white: #ffffff;
+  --border: #d1d5db;
+  --muted: #6b7280;
+}
+
+/* ── Page ──────────────────────────────────────────── */
+.contact-page {
+  font-family: "Georgia", serif;
+  background: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  padding-bottom: 60px;
+}
+
+/* ── Hero ──────────────────────────────────────────── */
+.hero {
+  background-color: var(--white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: 32px 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.hero-heading {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.hero-underline {
+  width: 56px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.hero-subheading {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ── Content Grid ──────────────────────────────────── */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+/* ── Info Card ─────────────────────────────────────── */
+.info-card {
+  background: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.info-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+.map-box {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ── Form Card ─────────────────────────────────────── */
+.form-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-input,
+.form-select {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--white);
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: var(--primary);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* ── Responsive ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .hero {
+    margin: 24px 40px;
+  }
+
+  .content-grid {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    margin: 16px;
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  .content-grid {
+    padding: 0 16px;
+  }
+
+  .info-card,
+  .form-card {
+    padding: 20px;
+  }
+}
