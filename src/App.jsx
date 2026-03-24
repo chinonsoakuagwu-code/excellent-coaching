@@ -7,6 +7,7 @@ import Faculty from './pages/Faculty'
 import SuccessStories from './pages/SuccessStories'
 import PriceList from './pages/PriceList'
 import Contact from './pages/Contact'
+import CoursesPage from './pages/Courses'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course/:courseName" element={<CourseDetail />} />
+        <Route path="/courses" element={<CoursesPage />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/success-stories" element={<SuccessStories />} />
         <Route path="/price-list" element={<PriceList />} />

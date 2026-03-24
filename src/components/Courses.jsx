@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Courses.css'
 
 const courses = [
@@ -51,7 +51,7 @@ const courses = [
 ]
 
 function Courses() {
-    
+    const navigate = useNavigate()
     return( 
     <section className='courses' id='courses'>
         <div className='section-header'>
@@ -62,7 +62,7 @@ function Courses() {
         {/*Courses Grid*/}
             <div className='courses-grid'>
                 {courses.map((course) => (
-                    <div key={course.id} className="course-card">
+                    <div key={course.id} className="course-card" onClick={() => navigate(`/course/${course.path}`)}>
                     {/* Green accent bar at the top of the card */}
                     <div className="card-accent"></div>
 
