@@ -1,0 +1,279 @@
+/* ── Variables ─────────────────────────────────────── */
+:root {
+  --primary: #16a34a;
+  --accent: #d97706;
+  --bg: #faf9f6;
+  --white: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #d1d5db;
+  --card: #f3f4f6;
+}
+
+/* ── Page ──────────────────────────────────────────── */
+.price-page {
+  font-family: "Georgia", serif;
+  background: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  padding-bottom: 60px;
+}
+
+/* ── Hero ──────────────────────────────────────────── */
+.price-hero {
+  background-color: var(--white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  margin: 32px 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.price-heading {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.price-underline {
+  width: 56px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.price-subheading {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ── Content ───────────────────────────────────────── */
+.price-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ── Section ───────────────────────────────────────── */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+/* ── Subjects Grid ─────────────────────────────────── */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.subject-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.subject-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.subject-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subject-icon {
+  font-size: 20px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  padding: 6px;
+  line-height: 1;
+}
+
+.subject-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subject-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.subject-per {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ── Bundles Grid ──────────────────────────────────── */
+.bundles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bundle-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+
+.bundle-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.bundle-tag {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+.tag-accent {
+  background: var(--accent);
+}
+
+.tag-primary {
+  background: var(--primary);
+}
+
+.bundle-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 24px;
+}
+
+.bundle-desc {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+  padding: 0 24px;
+  line-height: 1.6;
+}
+
+/* ── Bundle Buttons ────────────────────────────────── */
+.bundle-btn {
+  width: calc(100% - 48px);
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.bundle-btn:hover {
+  opacity: 0.88;
+}
+
+.btn-outline-green {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-solid-green {
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--white);
+}
+
+/* ── Download ──────────────────────────────────────── */
+.download-row {
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+
+/* ── Responsive ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .price-hero {
+    margin: 24px 40px;
+  }
+
+  .price-content {
+    padding: 0 40px;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .price-hero {
+    margin: 16px;
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  .price-content {
+    padding: 0 16px;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bundles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+}
