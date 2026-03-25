@@ -1,0 +1,393 @@
+/* CourseDetail.css */
+/* Styles for the Course Detail page */
+
+.course-detail {
+  background-color: #FAF9F6;
+  padding-bottom: 80px;
+}
+
+/* Hero banner */
+.cd-hero {
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  margin: 0 160px 60px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cd-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.cd-hero-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16A34A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.cd-hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #FAF9F6;
+  margin-bottom: 12px;
+}
+
+.cd-hero-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #16A34A;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.cd-hero-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Two column main content */
+.cd-main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  padding: 0 160px;
+  margin-bottom: 60px;
+}
+
+/* Course info card */
+.cd-info-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  border-top: 4px solid #16A34A;
+}
+
+.cd-info-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.cd-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cd-info-icon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(22, 163, 74, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cd-info-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 2px;
+}
+
+.cd-info-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Action buttons */
+.cd-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cd-enroll-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #D97706;
+  color: #FAF9F6;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cd-enroll-btn:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+}
+
+.cd-download-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #16A34A;
+  color: #FAF9F6;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cd-download-btn:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* Course structure */
+.cd-structure-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.cd-structure-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #6B7280;
+  margin-bottom: 20px;
+}
+
+.cd-structure-list {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.cd-structure-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #F3F4F6;
+  transition: background-color 0.2s;
+}
+
+.cd-structure-item:hover {
+  background-color: rgba(22, 163, 74, 0.04);
+}
+
+.cd-structure-item:last-child {
+  border-bottom: none;
+}
+
+.cd-structure-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Subject number badge */
+.cd-structure-num {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(22, 163, 74, 0.1);
+  color: #16A34A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cd-structure-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.cd-check {
+  width: 28px;
+  height: 28px;
+  background-color: #16A34A;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Related courses */
+.cd-related-section {
+  padding: 0 160px;
+  margin-bottom: 48px;
+}
+
+.cd-related-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.cd-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cd-related-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cd-related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.cd-related-accent {
+  height: 5px;
+  background-color: #16A34A;
+}
+
+.cd-related-content {
+  padding: 20px 24px;
+}
+
+.cd-related-content h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.cd-related-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.cd-related-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16A34A;
+}
+
+/* Back button */
+.cd-back {
+  text-align: center;
+}
+
+.cd-back-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #16A34A;
+  color: #FAF9F6;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cd-back-btn:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* Course not found */
+.course-not-found {
+  text-align: center;
+  padding: 80px;
+}
+
+.course-not-found h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cd-hero {
+    margin: 0 20px 40px;
+    height: auto;
+    min-height: 200px;
+    padding: 40px 0;
+  }
+
+  .cd-hero-title {
+    font-size: 32px;
+  }
+
+  .cd-hero-desc {
+    font-size: 14px;
+  }
+
+  .cd-main {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .cd-related-section {
+    padding: 0 20px;
+  }
+
+  .cd-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-back {
+    padding: 0 20px;
+  }
+}

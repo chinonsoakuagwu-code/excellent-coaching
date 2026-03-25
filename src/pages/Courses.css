@@ -1,0 +1,187 @@
+ /* Courses.css (page) */
+/* Styles for the full Courses page */
+
+.courses-page {
+  background-color: #FAF9F6;
+  padding-bottom: 80px;
+}
+
+/* Hero banner */
+.courses-hero {
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  margin: 0 160px 60px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.courses-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.courses-hero-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16A34A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.courses-hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #FAF9F6;
+  margin-bottom: 12px;
+}
+
+.courses-hero-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #16A34A;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.courses-hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Page content wrapper */
+.courses-page-content {
+  padding: 0 160px;
+}
+
+/* 3 column grid */
+.courses-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Individual course card */
+.courses-page-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.courses-page-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Green top accent bar */
+.courses-page-accent {
+  height: 5px;
+  background-color: #16A34A;
+}
+
+/* Card content */
+.courses-page-card-content {
+  padding: 24px;
+}
+
+/* Icon and name row */
+.courses-page-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.courses-page-icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(22, 163, 74, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.courses-page-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Description */
+.courses-page-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Meta badges row */
+.courses-page-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.courses-page-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #16A34A;
+  background-color: rgba(22, 163, 74, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* View course link */
+.courses-page-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #16A34A;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .courses-hero {
+    margin: 0 20px 40px;
+    height: auto;
+    min-height: 200px;
+    padding: 40px 0;
+  }
+
+  .courses-hero-title {
+    font-size: 32px;
+  }
+
+  .courses-page-content {
+    padding: 0 20px;
+  }
+
+  .courses-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
