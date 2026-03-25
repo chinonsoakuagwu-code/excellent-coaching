@@ -1,0 +1,241 @@
+/* SuccessStories.css (page) */
+/* Styles for the full Success Stories page */
+
+.success-page {
+  background-color: #FAF9F6;
+  padding-bottom: 80px;
+}
+
+/* Hero banner */
+.success-hero {
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  margin: 0 160px 60px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.success-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.success-hero-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16A34A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.success-hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #FAF9F6;
+  margin-bottom: 12px;
+}
+
+.success-hero-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #16A34A;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.success-hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Page content */
+.success-page-content {
+  padding: 0 160px;
+}
+
+/* 3 column grid */
+.success-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+/* Individual story card */
+.success-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.success-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Green accent bar */
+.success-accent {
+  height: 5px;
+  background-color: #16A34A;
+}
+
+/* Card content */
+.success-card-content {
+  padding: 28px 24px;
+  text-align: center;
+}
+
+/* Circular photo wrapper */
+.success-img-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 16px;
+  border: 3px solid #16A34A;
+}
+
+.success-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Student name */
+.success-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+/* Subject and year */
+.success-subject {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #16A34A;
+  margin-bottom: 8px;
+}
+
+/* Star rating in bronze */
+.success-stars {
+  color: #D97706;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Quote in italic */
+.success-quote {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #374151;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Achievement badge */
+.success-badge {
+  background-color: rgba(22, 163, 74, 0.1);
+  color: #16A34A;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* CTA section at bottom */
+.success-cta {
+  margin-top: 20px;
+}
+
+.success-cta-card {
+  background-color: #16A34A;
+  border-radius: 16px;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.success-cta-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #FAF9F6;
+  margin-bottom: 12px;
+}
+
+.success-cta-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 28px;
+}
+
+.success-cta-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #FAF9F6;
+  color: #16A34A;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.success-cta-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .success-hero {
+    margin: 0 20px 40px;
+    height: auto;
+    min-height: 200px;
+    padding: 40px 0;
+  }
+
+  .success-hero-title {
+    font-size: 32px;
+  }
+
+  .success-page-content {
+    padding: 0 20px;
+  }
+
+  .success-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .success-cta-card {
+    padding: 32px 20px;
+  }
+
+  .success-cta-title {
+    font-size: 24px;
+  }
+}

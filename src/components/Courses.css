@@ -1,7 +1,7 @@
 /* Courses Section Wrapper*/
-.courses{
-    padding: 80px 160px;
-    background-color: hsl(45, 29%, 97%);
+.courses {
+  padding: 40px 160px 80px 160px; 
+  background-color: #FAF9F6;
 }
 
 .section-header{
