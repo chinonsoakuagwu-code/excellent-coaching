@@ -277,3 +277,27 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Subject card as download link ─────────────────── */
+a.subject-card {
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+a.subject-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.15);
+}
+
+.subject-download-icon {
+  margin-left: auto;
+  font-size: 14px;
+  color: var(--primary);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+a.subject-card:hover .subject-download-icon {
+  opacity: 1;
+}

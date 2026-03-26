@@ -1,12 +1,12 @@
 import "./PriceList.css";
 
 const subjects = [
-  { icon: "％", name: "Mathematics", price: "₦11,827 " },
-  { icon: "🧾", name: "Commerce", price: "₦3,000" },
-  { icon: "💬", name: "Languages", price: "₦13,000" },
-  { icon: "🔬", name: "Sciences", price: "₦3,000" },
-  { icon: "⚖️", name: "Law", price: "₦2,000" },
-  { icon: "📖", name: "Literature", price: "₦2,000" },
+  { icon: "％", name: "Mathematics", price: "₦15,000", file: "mathematics.docx" },
+  { icon: "🧾", name: "Commerce", price: "₦20,000", file: "commerce.docx" },
+  { icon: "💬", name: "Languages", price: "₦13,000", file: "languages.docx" },
+  { icon: "🔬", name: "Sciences", price: "₦13,000", file: "sciences.docx" },
+  { icon: "⚖️", name: "Law", price: "₦11,827", file: "law.docx" },
+  { icon: "📖", name: "Literature", price: "₦11,000", file: "literature.docx" },
 ];
 
 const bundles = [
@@ -26,7 +26,18 @@ const bundles = [
   },
 ];
 
-function PriceList() {
+function handleDownloadAll() {
+  subjects.forEach(({ file }) => {
+    const link = document.createElement("a");
+    link.href = `/docs/${file}`;
+    link.download = file;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
+
+export default function PriceList() {
   return (
     <div className="price-page">
 
@@ -46,15 +57,22 @@ function PriceList() {
           <h2 className="section-title">Subject Prices</h2>
           <div className="subjects-grid">
             {subjects.map((s) => (
-              <div key={s.name} className="subject-card">
+              <a
+                key={s.name}
+                href={`/docs/${s.file}`}
+                download={s.file}
+                className="subject-card"
+                title={`Download ${s.name} course document`}
+              >
                 <div className="subject-top">
                   <span className="subject-icon">{s.icon}</span>
                   <span className="subject-name">{s.name}</span>
+                  <span className="subject-download-icon">⬇</span>
                 </div>
                 <div className="subject-price">
                   {s.price} <span className="subject-per">/ term</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
@@ -76,14 +94,14 @@ function PriceList() {
           </div>
         </section>
 
-        {/* Download */}
+        {/* Download All */}
         <div className="download-row">
-          <button className="download-btn">⬇ Download Full Price List PDF</button>
+          <button className="download-btn" onClick={handleDownloadAll}>
+            ⬇ Download Full Price List PDF
+          </button>
         </div>
 
       </div>
     </div>
   );
 }
-
-export default PriceList;
