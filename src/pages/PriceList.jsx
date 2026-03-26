@@ -1,9 +1,9 @@
 import "./PriceList.css";
 
 const subjects = [
-  { icon: "％", name: "Mathematics", price: "₦3,000" },
+  { icon: "％", name: "Mathematics", price: "₦11,827 " },
   { icon: "🧾", name: "Commerce", price: "₦3,000" },
-  { icon: "💬", name: "Languages", price: "₦3,000" },
+  { icon: "💬", name: "Languages", price: "₦13,000" },
   { icon: "🔬", name: "Sciences", price: "₦3,000" },
   { icon: "⚖️", name: "Law", price: "₦2,000" },
   { icon: "📖", name: "Literature", price: "₦2,000" },
