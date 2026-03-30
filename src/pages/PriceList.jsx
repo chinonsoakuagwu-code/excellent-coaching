@@ -1,4 +1,5 @@
 import "./PriceList.css";
+import classroomImg from '../assets/classroom image.png'
 
 const subjects = [
   { icon: "％", name: "Mathematics", price: "₦15,000", file: "mathematics.docx" },
@@ -41,14 +42,19 @@ export default function PriceList() {
   return (
     <div className="price-page">
 
-      {/* Hero */}
-      <div className="price-hero">
-        <h1 className="price-heading">Our Price List</h1>
-        <div className="price-underline" />
-        <p className="price-subheading">
-          Quality education at transparent and affordable rates
-        </p>
-      </div>
+      <div
+              className="faculty-hero"
+              style={{ backgroundImage: `url(${classroomImg})` }}
+            >
+              <div className="faculty-hero-overlay">
+                <p className="faculty-hero-tag">Excellent Coaching</p>
+                <h1 className="faculty-hero-title">Our Price List</h1>
+                <div className="faculty-hero-underline"></div>
+                <p className="faculty-hero-subtitle">
+                  Our Various Prices
+                </p>
+              </div>
+            </div>
 
       <div className="price-content">
 
