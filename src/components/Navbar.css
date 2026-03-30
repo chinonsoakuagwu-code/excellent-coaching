@@ -75,3 +75,82 @@
     height: 45px;
   }
 }
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Each line of the hamburger */
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #111827;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger to X when open */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile enroll button - only shows inside mobile menu */
+.mobile-enroll {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-enroll {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: #FAF9F6;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+    z-index: 999;
+  }
+
+  /* Show links when menu is open */
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .mobile-enroll {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .mobile-enroll .enroll-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
