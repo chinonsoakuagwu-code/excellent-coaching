@@ -21,6 +21,7 @@
 
 /* ── Hero ──────────────────────────────────────────── */
 .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../assets/classroom image.png');
   background-color: var(--white);
   background-size: cover;
   background-position: center;
@@ -43,7 +44,7 @@
   font-size: clamp(26px, 4vw, 38px);
   font-weight: 700;
   margin: 0 0 8px;
-  color: var(--text);
+  color: white;
 }
 
 .hero-underline {
@@ -55,7 +56,7 @@
 }
 
 .hero-subheading {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
   margin: 0;
 }
