@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import classroomImg from '../assets/classroom image.png'
-import './Hero.css'
+import "./Hero.css"
 
 function Hero() {
   return (
